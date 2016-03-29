@@ -6,7 +6,7 @@
 /*   By: djean <djean@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/03/29 12:10:14 by djean             #+#    #+#             */
-/*   Updated: 2016/03/29 12:21:42 by djean            ###   ########.fr       */
+/*   Updated: 2016/03/29 12:28:01 by djean            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,6 +25,6 @@ int	main(void)
 	int	ca;
 
 	sranddev();
-	ca = rand() % (sizeof(on_mange) / sizeof(char*));
+	ca = rand() % (sizeof(on_mange) / sizeof(*on_mange));
 	printf("%s", on_mange[ca]);
 }
